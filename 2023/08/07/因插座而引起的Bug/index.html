@@ -16,22 +16,22 @@
   <meta name="author" content="Will Wang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="之前读过一些文章，零星的知晓稻盛和夫的几个传奇例子，最知名的当属拯救濒临破产的日本航空公司，短短一年就扭亏为盈。 微信读书 APP 刷到这本书时，立马加入书架。 本书内容不多，只有 300 来页，却花了两周才陆续读完（实属懒惰）。 稻盛和夫出身于普通人家，在七兄妹中排行第二，长兄和妹妹为了他上大学放弃了升学的机会。 毕业后他入职一家公司，从事精密陶瓷材料研发，因经营理念不合，于是他决定离职，在几位">
+    <meta name="description" content="客户反馈他们手中的机器收到的 485 串口数据不对。可是我们测试验证时，确确实实可以收到正确的 485 串口数据，这能是哪里的问题呢？ 我们把客户的问题现象反馈给了串口设备的厂家，询问他们有什么看法。他们说这个 485 串口设备供电处需要连接一个电容，进行滤波，否则就容易出现客户数据不对的现象。 机器给 485 通电处确实没有电容，可是为什么我们手中的设备没有复现客户的 bug 呢？ 难道是这台机">
 <meta property="og:type" content="article">
-<meta property="og:title" content="稻盛和夫阿米巴经营">
-<meta property="og:url" content="http://example.com/2023/08/06/%E7%A8%BB%E7%9B%9B%E5%92%8C%E5%A4%AB%E9%98%BF%E7%B1%B3%E5%B7%B4%E7%BB%8F%E8%90%A5/index.html">
+<meta property="og:title" content="因插座而引起的Bug">
+<meta property="og:url" content="http://example.com/2023/08/07/%E5%9B%A0%E6%8F%92%E5%BA%A7%E8%80%8C%E5%BC%95%E8%B5%B7%E7%9A%84Bug/index.html">
 <meta property="og:site_name" content="一只紫狼">
-<meta property="og:description" content="之前读过一些文章，零星的知晓稻盛和夫的几个传奇例子，最知名的当属拯救濒临破产的日本航空公司，短短一年就扭亏为盈。 微信读书 APP 刷到这本书时，立马加入书架。 本书内容不多，只有 300 来页，却花了两周才陆续读完（实属懒惰）。 稻盛和夫出身于普通人家，在七兄妹中排行第二，长兄和妹妹为了他上大学放弃了升学的机会。 毕业后他入职一家公司，从事精密陶瓷材料研发，因经营理念不合，于是他决定离职，在几位">
+<meta property="og:description" content="客户反馈他们手中的机器收到的 485 串口数据不对。可是我们测试验证时，确确实实可以收到正确的 485 串口数据，这能是哪里的问题呢？ 我们把客户的问题现象反馈给了串口设备的厂家，询问他们有什么看法。他们说这个 485 串口设备供电处需要连接一个电容，进行滤波，否则就容易出现客户数据不对的现象。 机器给 485 通电处确实没有电容，可是为什么我们手中的设备没有复现客户的 bug 呢？ 难道是这台机">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-06T12:00:16.000Z">
-<meta property="article:modified_time" content="2023-08-06T12:34:54.638Z">
+<meta property="article:published_time" content="2023-08-07T13:06:04.000Z">
+<meta property="article:modified_time" content="2023-08-07T13:27:05.235Z">
 <meta property="article:author" content="Will Wang">
-<meta property="article:tag" content="读书">
+<meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>稻盛和夫阿米巴经营 - 一只紫狼</title>
+  <title>因插座而引起的Bug - 一只紫狼</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -226,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="稻盛和夫阿米巴经营"></span>
+            <span id="subtitle" data-typed-text="因插座而引起的Bug"></span>
           
         </div>
 
@@ -237,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-06 20:00" pubdate>
-          2023年8月6日 晚上
+        <time datetime="2023-08-07 21:06" pubdate>
+          2023年8月7日 晚上
         </time>
       </span>
     
@@ -249,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          800 字
+          511 字
         
       </span>
     
@@ -260,7 +260,7 @@
         
         
         
-          7 分钟
+          5 分钟
         
       </span>
     
@@ -305,29 +305,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">稻盛和夫阿米巴经营</h1>
+            <h1 id="seo-header">因插座而引起的Bug</h1>
             
             
               <div class="markdown-body">
                 
-                <p>之前读过一些文章，零星的知晓稻盛和夫的几个传奇例子，最知名的当属拯救濒临破产的日本航空公司，短短一年就扭亏为盈。</p>
-<p>微信读书 APP 刷到这本书时，立马加入书架。</p>
-<p>本书内容不多，只有 300 来页，却花了两周才陆续读完（实属懒惰）。</p>
-<p>稻盛和夫出身于普通人家，在七兄妹中排行第二，长兄和妹妹为了他上大学放弃了升学的机会。</p>
-<p>毕业后他入职一家公司，从事精密陶瓷材料研发，因经营理念不合，于是他决定离职，在几位朋友的支持下，创立了京瓷公司。</p>
-<p>或许正因为他不懂得专业的会计知识、运营知识，才能打破常规，在公司实行更加通俗易懂的规章制度，将公司的员工按照职能划分成了一个个相互独立又彼此紧密联系的阿米巴组织。（与铃木敏文经营 7-11 便利店的故事颇为相似，这个之后我们再叙）</p>
-<p>每个阿米巴组织要与其他阿米巴组织产生公司内部交易行为，计算收入以及成本，核算盈余。</p>
-<p>这个组织架构我确是第一次听闻，我从事的公司都是由销售部门负责客户洽谈，售卖公司产品；研发人员只需要完成安排的生产计划即可，和市场根本不会产生联系。</p>
-<p>然而通过阿米巴这样的形式，销售部门需要从研发部门购买产品，然后售出；研发部门同样需要单独去购买原材料，加工制作成成品后售卖给销售部门。</p>
-<p>这样市场一旦产生价格波动，全公司的各个人员都会知晓，立马商定策略进行改进，每一位员工都深深的参与到公司的运营之中。</p>
-<p>如此精深的阿米巴经营理念并非我这样一两句话就可以解释清楚，毕竟我也只是读了一遍，必不能理解，欢迎大家前去阅读。</p>
-<p>稻盛和夫在书中讲述了一个事例，我很受启发。</p>
-<p>他想从公司外部引进一位人才，并且赋予他的职位要高于一起创业的诸多元老之上，于是对诸位创业同志说道：如果我们的心胸不至于那么狭窄，在把公司发展为世界第一的途中需要引进干部来当我们的领导，我们可以接受，那么我就决定聘用，否则我就放弃这个念头。</p>
-<p>诸位创业同志都痛快的允诺：我们不介意让他来当我们的上司。</p>
-<p>有如此胸襟，何愁天下英才不归附。</p>
+                <p>客户反馈他们手中的机器收到的 485 串口数据不对。可是我们测试验证时，确确实实可以收到正确的 485 串口数据，这能是哪里的问题呢？</p>
+<p>我们把客户的问题现象反馈给了串口设备的厂家，询问他们有什么看法。他们说这个 485 串口设备供电处需要连接一个电容，进行滤波，否则就容易出现客户数据不对的现象。</p>
+<p>机器给 485 通电处确实没有电容，可是为什么我们手中的设备没有复现客户的 bug 呢？</p>
+<p>难道是这台机器的差异性？恰好别的工位上也有一些机器正在进行测试，拿来验证 485 串口的问题。竟然复现了这个现象。</p>
+<p>工位上的其他几台也出现了这个问题，难道真的是同事手气好，拿到了一台没有问题的设备，其他的设备都有问题。</p>
+<p>为了进一步确定问题的根源，将复现 bug 的机器拿到同事的工位进行验证，不可思议的又没了问题。</p>
+<p>公司的电应该是走的一路线才对的，还能有哪里不同，难道是插座。</p>
+<p>于是走到有问题的工位处，接了另一个插座，竟然也没了问题。</p>
+<p>原来是插座的缘故，没有问题的插座是公牛品牌的，有问题的是其他品牌的，应该是公牛插座内部对电流做了滤波操作，可以输出稳定的电流，消除了电流波动引起的设备故障。</p>
+<p>啥也不说了，以后再买插座就只买公牛品牌的，公牛插座竟然成为了这次测试的最大赢家。</p>
 <center>END</center>
-
-
                 
               </div>
             
@@ -339,7 +332,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%AF%BB%E4%B9%A6/" class="print-no-link">#读书</a>
+        <a href="/tags/%E7%BC%96%E7%A8%8B/" class="print-no-link">#编程</a>
       
     </div>
   
@@ -351,8 +344,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>稻盛和夫阿米巴经营</div>
-      <div>http://example.com/2023/08/06/稻盛和夫阿米巴经营/</div>
+      <div>因插座而引起的Bug</div>
+      <div>http://example.com/2023/08/07/因插座而引起的Bug/</div>
     </div>
     <div class="license-meta">
       
@@ -364,7 +357,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月6日</div>
+          <div>2023年8月7日</div>
         </div>
       
       
@@ -396,18 +389,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/07/%E5%9B%A0%E6%8F%92%E5%BA%A7%E8%80%8C%E5%BC%95%E8%B5%B7%E7%9A%84Bug/" title="因插座而引起的Bug">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">因插座而引起的Bug</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/31/%E8%B6%85%E7%BA%A7%E6%BC%AB%E7%94%BB%E7%B4%A0%E6%8F%8F%E6%8A%80%E6%B3%95%E5%9F%BA%E7%A1%80%E7%AF%87/" title="超级漫画素描技法基础篇">
-                        <span class="hidden-mobile">超级漫画素描技法基础篇</span>
+                      <a href="/2023/08/06/%E7%A8%BB%E7%9B%9B%E5%92%8C%E5%A4%AB%E9%98%BF%E7%B1%B3%E5%B7%B4%E7%BB%8F%E8%90%A5/" title="稻盛和夫阿米巴经营">
+                        <span class="hidden-mobile">稻盛和夫阿米巴经营</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

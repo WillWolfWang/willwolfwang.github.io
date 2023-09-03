@@ -16,22 +16,22 @@
   <meta name="author" content="Will Wang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="客户反馈他们手中的机器收到的 485 串口数据不对。可是我们测试验证时，确确实实可以收到正确的 485 串口数据，这能是哪里的问题呢？ 我们把客户的问题现象反馈给了串口设备的厂家，询问他们有什么看法。他们说这个 485 串口设备供电处需要连接一个电容，进行滤波，否则就容易出现客户数据不对的现象。 机器给 485 通电处确实没有电容，可是为什么我们手中的设备没有复现客户的 bug 呢？ 难道是这台机">
+    <meta name="description" content="几乎所有事物的次要性，再怎么高估都不过分。 生活中总是被大量的事情充斥着，每天都忙忙碌碌，不得空闲。 如果晚上睡觉前回顾一下白天，这些忙碌是否真的有意义呢？ 本书提倡精要主义思想，只做最重要的事情，而不是让各种琐事把我们的精力耗光。 不禁让我想起了初中三年级时班主任分享给我们的一篇文章——「生命中的大石头」。 老师拿来了一个空杯子，往里面放了许多的大石头，问同学们：瓶子装满了么？同学们回答到：装满">
 <meta property="og:type" content="article">
-<meta property="og:title" content="因插座而引起的Bug">
-<meta property="og:url" content="http://example.com/2023/08/07/%E5%9B%A0%E6%8F%92%E5%BA%A7%E8%80%8C%E5%BC%95%E8%B5%B7%E7%9A%84Bug/index.html">
+<meta property="og:title" content="精要主义">
+<meta property="og:url" content="http://example.com/2023/09/03/%E7%B2%BE%E8%A6%81%E4%B8%BB%E4%B9%89/index.html">
 <meta property="og:site_name" content="一只紫狼">
-<meta property="og:description" content="客户反馈他们手中的机器收到的 485 串口数据不对。可是我们测试验证时，确确实实可以收到正确的 485 串口数据，这能是哪里的问题呢？ 我们把客户的问题现象反馈给了串口设备的厂家，询问他们有什么看法。他们说这个 485 串口设备供电处需要连接一个电容，进行滤波，否则就容易出现客户数据不对的现象。 机器给 485 通电处确实没有电容，可是为什么我们手中的设备没有复现客户的 bug 呢？ 难道是这台机">
+<meta property="og:description" content="几乎所有事物的次要性，再怎么高估都不过分。 生活中总是被大量的事情充斥着，每天都忙忙碌碌，不得空闲。 如果晚上睡觉前回顾一下白天，这些忙碌是否真的有意义呢？ 本书提倡精要主义思想，只做最重要的事情，而不是让各种琐事把我们的精力耗光。 不禁让我想起了初中三年级时班主任分享给我们的一篇文章——「生命中的大石头」。 老师拿来了一个空杯子，往里面放了许多的大石头，问同学们：瓶子装满了么？同学们回答到：装满">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-07T13:06:04.000Z">
-<meta property="article:modified_time" content="2023-08-07T13:27:05.235Z">
+<meta property="article:published_time" content="2023-09-03T03:12:35.000Z">
+<meta property="article:modified_time" content="2023-09-03T03:35:00.888Z">
 <meta property="article:author" content="Will Wang">
-<meta property="article:tag" content="编程">
+<meta property="article:tag" content="读书">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>因插座而引起的Bug - 一只紫狼</title>
+  <title>精要主义 - 一只紫狼</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -226,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="因插座而引起的Bug"></span>
+            <span id="subtitle" data-typed-text="精要主义"></span>
           
         </div>
 
@@ -237,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-07 21:06" pubdate>
-          2023年8月7日 晚上
+        <time datetime="2023-09-03 11:12" pubdate>
+          2023年9月3日 上午
         </time>
       </span>
     
@@ -249,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          511 字
+          527 字
         
       </span>
     
@@ -305,21 +305,23 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">因插座而引起的Bug</h1>
+            <h1 id="seo-header">精要主义</h1>
             
             
               <div class="markdown-body">
                 
-                <p>客户反馈他们手中的机器收到的 485 串口数据不对。可是我们测试验证时，确确实实可以收到正确的 485 串口数据，这能是哪里的问题呢？</p>
-<p>我们把客户的问题现象反馈给了串口设备的厂家，询问他们有什么看法。他们说这个 485 串口设备供电处需要连接一个电容，进行滤波，否则就容易出现客户数据不对的现象。</p>
-<p>机器给 485 通电处确实没有电容，可是为什么我们手中的设备没有复现客户的 bug 呢？</p>
-<p>难道是这台机器的差异性？恰好别的工位上也有一些机器正在进行测试，拿来验证 485 串口的问题。竟然复现了这个现象。</p>
-<p>工位上的其他几台也出现了这个问题，难道真的是同事手气好，拿到了一台没有问题的设备，其他的设备都有问题。</p>
-<p>为了进一步确定问题的根源，将复现 bug 的机器拿到同事的工位进行验证，不可思议的又没了问题。</p>
-<p>公司的电应该是走的一路线才对的，还能有哪里不同，难道是插座。</p>
-<p>于是走到有问题的工位处，接了另一个插座，竟然也没了问题。</p>
-<p>原来是插座的缘故，没有问题的插座是公牛品牌的，有问题的是其他品牌的，应该是公牛插座内部对电流做了滤波操作，可以输出稳定的电流，消除了电流波动引起的设备故障。</p>
-<p>啥也不说了，以后再买插座就只买公牛品牌的，公牛插座竟然成为了这次测试的最大赢家。</p>
+                <p>几乎所有事物的次要性，再怎么高估都不过分。</p>
+<p>生活中总是被大量的事情充斥着，每天都忙忙碌碌，不得空闲。</p>
+<p>如果晚上睡觉前回顾一下白天，这些忙碌是否真的有意义呢？</p>
+<p>本书提倡精要主义思想，只做最重要的事情，而不是让各种琐事把我们的精力耗光。</p>
+<p>不禁让我想起了初中三年级时班主任分享给我们的一篇文章——「生命中的大石头」。</p>
+<p>老师拿来了一个空杯子，往里面放了许多的大石头，问同学们：瓶子装满了么？同学们回答到：装满了。</p>
+<p>老师又拿了沙子继续倒入这个杯子，沙子填满了大石头之间的空隙，问道：这次瓶子装满了么？同学们有了这次的经历，回答说：没有装满。</p>
+<p>老师再往瓶子中倒了一些水，直到溢出瓶口为止，这下再也没有可以放入的了，同学们都说：这次是真的装满了。</p>
+<p>老师说：同学们从这次的事件中可以领悟到什么呢？有不少同学说到零散的时间也可以做很多事等充分利用时间的结论。</p>
+<p>老师却说：我希望你们在生命中，先放入那些最重要的事情，如果先放入了细沙、水这些零碎的事情，那么最重要的事情就无法放入了。</p>
+<p>在信息爆炸的时代，每个人都在贩售一些东西——一种想法，一种观点，一种主张 ，换取我们的时间。</p>
+<p>如果我们不能区分出对我们而言重要的事情，只是一味的拿我们的时间去购买它们，累的筋疲力尽不说，取得的进步却寥寥无几。</p>
 <center>END</center>
                 
               </div>
@@ -332,7 +334,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%BC%96%E7%A8%8B/" class="print-no-link">#编程</a>
+        <a href="/tags/%E8%AF%BB%E4%B9%A6/" class="print-no-link">#读书</a>
       
     </div>
   
@@ -344,8 +346,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>因插座而引起的Bug</div>
-      <div>http://example.com/2023/08/07/因插座而引起的Bug/</div>
+      <div>精要主义</div>
+      <div>http://example.com/2023/09/03/精要主义/</div>
     </div>
     <div class="license-meta">
       
@@ -357,7 +359,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月7日</div>
+          <div>2023年9月3日</div>
         </div>
       
       
@@ -389,18 +391,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/03/%E7%B2%BE%E8%A6%81%E4%B8%BB%E4%B9%89/" title="精要主义">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">精要主义</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/06/%E7%A8%BB%E7%9B%9B%E5%92%8C%E5%A4%AB%E9%98%BF%E7%B1%B3%E5%B7%B4%E7%BB%8F%E8%90%A5/" title="稻盛和夫阿米巴经营">
-                        <span class="hidden-mobile">稻盛和夫阿米巴经营</span>
+                      <a href="/2023/08/07/%E5%9B%A0%E6%8F%92%E5%BA%A7%E8%80%8C%E5%BC%95%E8%B5%B7%E7%9A%84Bug/" title="因插座而引起的Bug">
+                        <span class="hidden-mobile">因插座而引起的Bug</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
